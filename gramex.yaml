@@ -25,7 +25,7 @@ url:
       table: voters
       default:
         _c: ['Name', 'Relative', 'Relative Name', 'Age', 'Sex', 'Section']
-        
+
   # vsa-login:
   #   # Default login_url is /login/. If you change this, change auth.login_url
   #   # https://learn.gramener.com/guide/auth/#login-urls
@@ -49,7 +49,7 @@ url:
 import:
   # To secure application for production,
   # replace 'YOUR-PROD-SERVER-NAME' with your production server host name.
-  deploy if socket.gethostname() in {'YOUR-PROD-SERVER-NAME'}: $GRAMEXPATH/deploy.yaml
+  deploy if socket.gethostname() in {'ip-172-31-5-139'}: $GRAMEXPATH/deploy.yaml
   # For alternate methods, see https://learn.gramener.com/guide/config/#conditions
 
   # /ui/ has Gramex UI components -- use this like the node_modules/ directory
