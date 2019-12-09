@@ -17,14 +17,28 @@ url:
         # Keep max-age small (in case we log out & log in as another user.)
         Cache-Control: private, max-age=1
     cache: { expiry: { duration: 1 } }
+
+  vsa-shakurbasti:
+    pattern: /$YAMLURL/shakurbasti
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/shakurbasti.html
+      # See https://learn.gramener.com/guide/auth/#authorization for auth rules
+      template: true
+      headers:
+        # Templates may have user-specific content. Cache privately.
+        # Keep max-age small (in case we log out & log in as another user.)
+        Cache-Control: private, max-age=1
+    cache: { expiry: { duration: 1 } }
+
   vsa-voter-data:
     pattern: /$YAMLURL/data
     handler: FormHandler
     kwargs:
       url: sqlite:///$YAMLPATH/assets/data/shakurbasti.db
-      table: voters
+      table: voters2
       default:
-        _c: ['Name', 'Relative', 'Relative Name', 'Age', 'Sex', 'Section']
+        _c: ['Voter Id', 'Name', 'Relative', 'Relative Name', 'Age', 'Sex', 'Section']
 
   # vsa-login:
   #   # Default login_url is /login/. If you change this, change auth.login_url
