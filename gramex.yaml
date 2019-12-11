@@ -17,7 +17,23 @@ url:
         # Keep max-age small (in case we log out & log in as another user.)
         Cache-Control: private, max-age=1
     cache: { expiry: { duration: 1 } }
-
+  vsa-contact:
+    pattern: /$YAMLURL/contact
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/contact.html
+      template: true
+      headers:
+        Cache-Control: public, max-age=86400
+  
+  vsa-faq:
+    pattern: /$YAMLURL/faq
+    handler: FileHandler
+    kwargs:
+      path: $YAMLPATH/faq.html
+      template: true
+      headers:
+        Cache-Control: public, max-age=86400
   vsa-shakurbasti:
     pattern: /$YAMLURL/shakurbasti
     handler: FileHandler

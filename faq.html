@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Voter Search Shakur Basti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    {% set base = '.' %}
+    {% include template-navbar.html %}
+    <!-- TODO: Filter bars -->
+    <div class="container-fluid py-4">
+        <div id="accordionVRR">
+            <p class="h3">FAQ Voter Roll Registry</p>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            How can I get registered/enrolled in the Electoral Roll?
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionVRR">
+                    <div class="card-body">
+                        You have to submit a filled in Form - 6 to the ERO of the Assembly Constituency
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            What is the procedure to make corrections in such names / other details that
+                            have been misspelt in the Electoral Roll?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionVRR">
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">For incorporation of corrections in the Electoral Rolls, You
+                                have to submit Form -
+                                8 to the ERO of the Assembly Constituency.</li>
+                            <li class="list-group-item">For inclusion of names Form 6</li>
+                            <li class="list-group-item">For any objection on inclusion of names Form 7</li>
+                            <li class="list-group-item">For correction of entries in the Electoral Rolls Form 8</li>
+                            <li class="list-group-item">For transposition of entry in electoral roll Form 8A</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            I have shifted my residence recently. How do I ensure that I am enrolled in my
+                            new place of residence and my name is deleted from the old place?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionVRR">
+                    <div class="card-body">
+                        In case the new residence is in the same constituency please fill Form 8A
+                        otherwise form 6 and submit to the ERO (SDM) or the AERO of the area of your new
+                        residence.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            I have shifted my residence recently. How do I ensure that I am enrolled in my
+                            new place of residence and my name is deleted from the old place?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionVRR">
+                    <div class="card-body">
+                        In case the new residence is in the same constituency please fill Form 8A
+                        otherwise form 6 and submit to the ERO (SDM) or the AERO of the area of your new
+                        residence.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            I do not have a ration card. Can I get enrolled without a ration card? What are
+                            the other documents, which I can show as proof of my residence?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionVRR">
+                    <div class="card-body">
+                        Ration Card is not necessary, however, you can show any other proof of
+                        residence like Passport, Bank Pass Book, Driving license etc. or any Govt. document to
+                        facilitate the work of registration.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            I am a tenant and my landlord does not want me to get enrolled. How can I get enrolled as a
+                            voter?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionVRR">
+                    <div class="card-body">
+                        To get enrolled in the voter list is your statutory right. Please
+                        check the Electoral roll of your area ERO (SDM)/AERO office. If
+                        your name is not included please fill up Form 6 and deposit it
+                        with the ERO.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            I have attained / will be attaining the age of 18. What proof
+                            do I need to show to get enrolled?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordionVRR">
+                    <div class="card-body">
+                        You can submit the proof of Date of Birth from the
+                        authorized agency (Passport, Matric certificate, Date of Birth
+                        certificate etc.)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="accordionVIC">
+            <p class="h1">FAQ Voter ID Cards</p>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven"
+                            aria-expanded="true" aria-controls="collapseSeven">
+                            Who is responsible for the preparation of electoral rolls for a
+                            Parliamentary or Assembly Constituency?
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseSeven" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionVIC">
+                    <div class="card-body">
+                        The Electoral Registration Officer (ERO). In the case of Delhi, these are the
+                        area Sub-Divisional Magistrates/Additional District Magistates. The Electoral
+                        Registration officer is responsible for the preparation of electoral rolls for an
+                        Assembly Constituency which itself is the roll for the Parliamentary
+                        Constituency in so far as that Assembly Segment is concerned.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                            aria-expanded="false" aria-controls="collapseEight">
+                            I have shifted my residence recently. I have Photo EPIC Card (Voter ID
+                            card) with the old address. Can I get new EPIC Card (Voter ID card) for the
+                            present address?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionVIC">
+                    <div class="card-body">
+                        First of all please ensure that you have enrolled yourself in the Electoral
+                        Roll of the concerned AC, where you are now residing following the procedure
+                        given in Ans. No.10. Subsequently, a new card at the present address will be
+                        issued to you.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                            aria-expanded="false" aria-controls="collapseNine">
+                            My old EPIC Card (Voter ID card) is defective. I would like to have a new
+                            EPIC Card (Voter ID card) with correct particulars. What is the procedure?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingThree" data-parent="#accordionVIC">
+                    <div class="card-body">
+                        You can get your I Card rectified by depositing it in the Office of the ERO
+                        concerned or at Photography Centre when the work of preparation of Photo ID
+                        card begins.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                            aria-expanded="false" aria-controls="collapseTen">
+                            I have lost my old EPIC Card (Voter ID card). How can I get a new EPIC
+                            Card (Voter ID card)?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTen" class="collapse" aria-labelledby="headingThree" data-parent="#accordionVIC">
+                    <div class="card-body">
+                        You can deposit a copy of the FIR lodged at the
+                        Police Station. You will get a new EPIC Card after deposit
+                        of Rs. 25. The dates for issuing EPIC Cards are
+                        published in leading Newspapers.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- .container-fluid -->
+
+    <script src="ui/jquery/dist/jquery.min.js"></script>
+    <script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ui/lodash/lodash.min.js"></script>
+    <script src="ui/g1/dist/g1.min.js"></script>
+
+    <!-- Commonly used libraries:
+  <script src="ui/d3v5/dist/d3.min.js"></script>
+  <script src="ui/morphdom/dist/morphdom-umd.min.js"></script>
+  <script src="ui/moment/min/moment-with-locales.min.js"></script>
+  <script src="ui/daterangepicker/daterangepicker.js"></script>
+  <script src="ui/leaflet/dist/leaflet.js"></script>
+  <script src="ui/topojson/dist/topojson.min.js"></script>
+  -->
+</body>
+
+</html>
