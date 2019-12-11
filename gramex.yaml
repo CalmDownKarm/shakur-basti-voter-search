@@ -36,9 +36,9 @@ url:
     handler: FormHandler
     kwargs:
       url: sqlite:///$YAMLPATH/assets/data/shakurbasti.db
-      table: voters2
+      table: voters
       default:
-        _c: ['Voter Id', 'Name', 'Relative', 'Relative Name', 'Age', 'Sex', 'Section']
+        _c: ['Name', 'Relative', 'Relative Name', 'Age', 'Sex', 'Section']
 
   # vsa-login:
   #   # Default login_url is /login/. If you change this, change auth.login_url

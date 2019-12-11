@@ -14,28 +14,46 @@
   {% include template-navbar.html %}
   <!-- TODO: Filter bars -->
   <div class="container-fluid py-4">
-    <form class="form-inline mb-1 justify-content-center">
+    <div class="form mb-1 justify-content-center w-100">
       <label for="name">Name</label>
-      <input type="text" class="form-control urlfilter mx-1" name="Name~" placeholder="Filter By Name" data-target="#">
+      <input type="text" class="form-control urlfilter mb-3" name="Name~" placeholder="Search From Name"
+        data-target="pushState">
       <label for="relative-name" class="ml-1">Relative's Name</label>
-      <input type="text" class="form-control urlfilter mx-1" name="Relative Name~" placeholder="Filter By Relative Name" data-target="#">
-      <label for="relative-name" class="ml-1">Voter Id</label>
-      <input type="text" class="form-control urlfilter mx-1" name="Voter Id~" placeholder="Filter By Voter Id" data-target="#">
-      <button type="submit" class="btn btn-primary">Filter</button>
-    </form>
-    <div class="formhandler" data-src="data" data-page-size="30"></div>
+      <input type="text" class="form-control urlfilter mb-3" name="Relative Name~"
+        placeholder="Search From Relative Name" data-target="pushState">
+      <button type="submit" class="btn btn-primary btn-lg">Search</button>
+    </div>
+    <div class="formhandler w-100"></div>
 
   </div><!-- .container-fluid -->
+
 
   <script src="ui/jquery/dist/jquery.min.js"></script>
   <script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="ui/lodash/lodash.min.js"></script>
   <script src="ui/g1/dist/g1.min.js"></script>
   <script>
-    $('body').urlfilter()
+    $(function () {
+      $('body').urlfilter({ target: 'pushState' })
+      $('.btn').on('click', function () {
+        let url = g1.url.parse(location.href)
+        console.log(url)
+        console.log(g1.url.parse('data').update(url.searchKey).toString())
+        if (url.searchKey['Name~'] || url.searchKey['Relative Name~']) {
+          $('.formhandler').formhandler({
+            src: g1.url.parse('data').update(url.searchKey).toString(),
+            pageSize: 5,
+            export: false,
+            size: false,
+            sort: false,
+            filters: false,
+            link: false,
+            editable: false
+          })
+        }
+        // $('#tableModal').modal()
+      })
 
-    $('.formhandler').formhandler({
-      pageSize: 20
     })
   </script>
   <!-- Commonly used libraries:
