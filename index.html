@@ -13,15 +13,25 @@
   {% set base = '.' %}
   {% include template-navbar.html %}
   <!-- TODO: Filter bars -->
-  <div class="container-fluid py-4">
-    <a href= "shakurbasti"><button class="btn btn-primary">Shakur Basti</button></a>
+  <div class="container d-flex py-4">
+    <div class="col-sm-12 mx-auto mt-5">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item h4">If you are a resident of Delhi, please ensure that your Voter ID is made.</li>
+        <li class="list-group-item h4">If you have a Voter ID Card, please confirm your name on the <a
+            href="https://ceodelhi.gov.in/ConstituentyDetailENG1.aspx?num=IQjmK0giNs/p+FK+76woMQ==&ii=e">Voter Roll</a>,
+          to
+          ensure that you can vote.</li>
+        <li class="list-group-item h4">Residents of Shakur Basti can check their details by clicking <a
+            href="shakurbasti"><button class="btn btn-primary">Shakur Basti</button></a></li>
+      </ul>
+    </div>
   </div><!-- .container-fluid -->
 
   <script src="ui/jquery/dist/jquery.min.js"></script>
   <script src="ui/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="ui/lodash/lodash.min.js"></script>
   <script src="ui/g1/dist/g1.min.js"></script>
-  
+
   <!-- Commonly used libraries:
   <script src="ui/d3v5/dist/d3.min.js"></script>
   <script src="ui/morphdom/dist/morphdom-umd.min.js"></script>
