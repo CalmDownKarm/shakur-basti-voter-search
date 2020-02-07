@@ -51,10 +51,10 @@ url:
     pattern: /$YAMLURL/data
     handler: FormHandler
     kwargs:
-      url: sqlite:///$YAMLPATH/assets/data/shakurbasti.db
+      url: sqlite:///$YAMLPATH/assets/data/shakurbastivoters.db
       table: voters
       default:
-        _c: ['Name', 'Relative', 'Relative Name', 'Age', 'Sex', 'Section']
+        _c: ['VoterID', 'Name', 'Relative', 'Relative Name', 'Age', 'Sex', 'Section', 'Polling Station', 'Booth No.']
 
   # vsa-login:
   #   # Default login_url is /login/. If you change this, change auth.login_url
